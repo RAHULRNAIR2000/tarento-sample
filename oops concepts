@@ -1,0 +1,25 @@
+class Vehicle {                                         // Parent class
+  String brand = "Ford";                               // Vehicle attribute
+                                                     
+                                                     // Vehicle method
+  public void go() {
+    System.out.println("this vehicle is moving ");
+  }
+}
+
+class Car extends Vehicle {                          // child  class
+
+   String modelName = "Mustang";
+   
+  public static void main(String[] args) {
+    Car myFastCar = new Car();
+    myFastCar.go();
+    System.out.println(myFastCar.brand + " " + myFastCar.modelName);
+  }
+}
+
+
+
+OUTPUT 
+this vehicle is moving 
+Ford Mustang
