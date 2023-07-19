@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Beautiful Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu bar -->
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Heading -->
+    <h1>KEEP GRINDING</h1>
+
+    <!-- Description -->
+    <div class="description">
+        <p>Hey hustlers! This website helps you uncover the time and effort you need to achieve your next big dream.</p>
+        <p>Ready to grind and make it happen? Let's get started!</p>
+    </div>
+
+    <!-- Input boxes -->
+    <div class="center">
+        <div class="input-boxes">
+            <div class="input-box">
+                <label for="salary">Monthly Salary:</label>
+                <input type="number" id="salary" placeholder="Enter your monthly salary" min="0">
+            </div>
+            <div class="input-box">
+                <label for="work-time">Daily Work Time:</label>
+                <input type="number" id="work-time" placeholder="Enter your daily work time" min="0">
+            </div>
+            <div class="input-box">
+                <label for="commodity-price">Price of the Commodity:</label>
+                <input type="number" id="commodity-price" placeholder="Enter the price of the commodity" min="0">
+            </div>
+        </div>
+        <button class="button" onclick="calculate()">Show</button>
+        <div class="result-box" id="result-box">
+            <label for="result">The extra time you need to work is:</label>
+            <span id="result"></span> Hours
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

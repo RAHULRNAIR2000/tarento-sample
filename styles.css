@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #111fff, #111111);
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6vw;
+    max-width: 75vw;
+    color: #fefefe;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-size 0.5s ease;
+    margin-bottom: 10px;
+}
+
+/* Style the menu bar */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111fff;
+    color: #fefefe;
+    padding: 10px;
+    z-index: 999;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #00b8ff;
+}
+
+/* Center the button and input boxes on the page */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fefefe;
+    text-align: center;
+}
+
+/* Style the button */
+.button {
+    background: #111fff;
+    color: #fefefe;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background: rgba(17, 17, 255, 0.85);
+}
+
+/* Style the input boxes */
+.input-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-right: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fefefe;
+    font-weight: bold;
+}
+
+.input-box input {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #fefefe;
+    width: 150px;
+    color: #111fff;
+    background: #fefefe;
+}
+
+/* Style the result box */
+.result-box {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fefefe;
+    font-weight: bold;
+}
+
+.result-box span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111fff;
+}
+
+/* Style the description */
+.description {
+    font-size: 20px;
+    color: #fefefe;
+    text-align: center;
+    margin-top: 0;
+}
